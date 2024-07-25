@@ -1,0 +1,66 @@
+\documentclass[10pt,letter]{article}
+\usepackage{setspace}
+\usepackage{array,colortbl,multirow,multicol,booktabs,ctable}
+% Palatino for main text and math
+\usepackage[osf,sc]{mathpazo}
+% Helvetica for sans serif
+% (scaled to match size of Palatino)
+\usepackage[scaled=0.90]{helvet}
+% Bera Mono for monospaced
+% (scaled to match size of Palatino)
+\usepackage[scaled=0.85]{beramono}
+
+\newcommand{\hdrule}{\midrule[\heavyrulewidth]}
+
+\setlength{\textheight}{10in}
+\setlength{\topmargin}{-.5in}
+\setlength{\textwidth}{7.5in}
+\setlength{\oddsidemargin}{-.5in}
+\setlength{\evensidemargin}{-.5in}
+
+\title{COMP310 Knowledge Areas}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+% #,topic,#,sub-topic,chap/sec
+\center{
+  \begin{tabular}{r>{\raggedright}p{0.3\textwidth}r>{\raggedright}p{0.4\textwidth}c}\toprule
+ & Topic & & Sub-Topic & Chapters Covered \\ \hdrule
+ 1 & Database Environments and DBMSs & a & External,Conceptual,Internal ANSI-SPARC Arch. &
+ 1--3 \\ \midrule
+ 2 & Relational Data Model & a & Data Structures & 4 \\
+  & & b & Integrity Constraints & 4 \\
+  & & c & Relational Algebra & 5 \\
+  & & d & Relational Calculus & 5 \\ \midrule
+  3 & Standard Query Language (SQL) & a & Selecting & 6 \\
+  & & b & Ordering & 6 \\
+  & & c & Grouping & 6 \\
+  & & d & Aggregates & 6 \\
+  & & e & Sub-queries & 6 \\
+  & & f & Any,all,exists,not exists & 6 \\
+  & & g & Joins (Inner,Outer, left, right) & 6 \\
+  & & h & Set Operations & 6 \\
+  & & i & Data Types and Integrity Constraints & 7 \\
+  & & j & Creating and altering tables and indices & 7\\
+  & & k & Creating Views & 7 \\ \midrule
+4 & Database Design & a & Entity-Relationship Modeling (ER Modeling) & 12 \\
+  & & b & Relational Database Normalization & 14 \\
+  & & c & Database Design \& Development Methods & 10--11,16--18\\ \midrule
+5 & Professional Knowledge (Table 4.2 from CC2020 (pg 50)) & a & Analytical and Critical Thinking & All \\
+  & & b & Collaboration and Teamwork & 1,10,11 \\
+  & & c & Ethical and Intercultural Perspectives & 1,10,11 \\
+  & & d & Mathematics and Statistics & 4--5 \\
+  & & e & Multi-Task Prioritization and Management & 1,10,11 \\
+  & & f & Oral Communication and Presentation & 1,10,11 \\
+  & & g & Problem Solving and Troubleshooting & 1,10,11 \\
+  & & h & Project and Task Organization and Planning & 1,10,11 \\
+  & & i & Quality Assurance / Control & 1,10,11 \\
+  & & j & Relationship Management & 1,10,11 \\
+  & & k & Research and Self-Starter/Learner & \\
+  & & l & Time Management & \\
+  & & m & Written Communication & 1,10,11 \\
+\end{tabular}
+}%end center
+\end{document}
