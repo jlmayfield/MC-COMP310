@@ -1,0 +1,38 @@
+\documentclass[nobib]{tufte-handout}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+
+\setlength{\textheight}{9in} \setlength{\topmargin}{-.5in}
+\setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\title{COMP 310 --- SQL (Home)work 3 --- Multi-table Tomfoolery }
+\author{  }
+\date{ }
+ 
+
+\begin{document}
+\maketitle
+
+Let's explore batting performance of all-stars vs. regular batters.  Here are a few constraints on this investigation: 
+\begin{enumerate}
+    \item Year - 1982
+    \item Only batters that had at least 400 plate appearances (PA = AB + BB +HBP + SF + SH)
+    \item Compute slugging (see homework 1) for each batter 
+    \item National League only
+\end{enumerate}
+
+Our goal is two separate queries: one for all-stars and one for non-all stars. Sort by slugging (high to low).
+\begin{itemize}
+    \item (two columns) First and last name
+    \item (two columns) team name and year (yes it's 1982, just include it)
+    \item (one column) stint 
+    \item (one column) plate appearances
+    \item (six columns) slugging and all the stats used to compute it (H,AB,2B,3B,HR)
+\end{itemize}
+
+
+\end{document}

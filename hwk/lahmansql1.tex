@@ -1,0 +1,33 @@
+\documentclass[nobib]{tufte-handout}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+
+\setlength{\textheight}{9in} \setlength{\topmargin}{-.5in}
+\setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\title{COMP 310 --- SQL Homework 1 --- Ch 1.1 -- Ch 1.3}
+\author{  }
+\date{ }
+ 
+
+\begin{document}
+\maketitle
+
+Develop SQL queries for the follow. Hint: As is the case with all programming, it is very helpful to build and test complex queries from smaller parts. So, do not hesitate to start with quires that return part of what you want and build from there. This can mean excluding columns or artificially restricting rows (i.e. only one year). 
+
+\begin{enumerate}
+    \item From people, get the playerID, their name as \textit{Last, First} (one string), and their batting and throwing handedness. 
+    \item From team, get the year, league, teamID, teamName, wins, loses, and winning percentage (wins/games played). 
+    \item Restrict both of the above to the years 1995 to 2005 (inclusive).
+    \item Get the playerID for Mark McGuire.  
+    \item Get all the batting data for Mark McGuire
+    \item For every season/stint of Mark McGuire's career get his batting average, total bases, slugging percentage, and runs created. Include along with these all the base stats needed to calculate those stats as well as his playerID, the year, stint number, and team. 
+    \item Sort the results of the above to display best to work years in terms of slugging. 
+    \item Get the same data as the previous query but for Sammy Sosa. 
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[nobib]{tufte-handout}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+
+\setlength{\textheight}{9in} \setlength{\topmargin}{-.5in}
+\setlength{\textwidth}{6.5in} \setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\title{COMP 310 --- SQL Homework 4 --- All the Things }
+\author{  }
+\date{ }
+ 
+
+\begin{document}
+\maketitle
+
+We're working towards a project where we use a high-level language to give users the ability to specify the key values of a query without having to touch the SQL.  For example, one might like to get a career breakdown for a batter that includes stats for each year of their career as well as career (or career so far) totals.  So, let's start by getting such a query for a specific player: Mark McGwire. 
+
+Your query should generate the following information for every season in McGwire's career and the same stats for his whole career. The result of the query should be a single table ordered by year with the career total values in the final row. 
+
+\begin{itemize}
+    \item First and last name
+    \item year (null for aggregate)
+    \item team name (null for aggregate)
+    \item Hits, At-bats, homeruns, walks 
+    \item Plate appearances, batting average, slugging, runs created, and on base percentage 
+\end{itemize}
+
+As always, build and test your query incrementally. To keep the query general, assume he was traded in one or more seasons. For practice, find out if and when he was traded mid-season. 
+
+\subsection*{Computed Statistics}
+
+\[BA = \dfrac{H}{AB} \] 
+\[PA = AB + BB + HBP + SF + SH \] 
+\[TB = 1B + 2*2B + 3*3B + 4*HR \] 
+\[SLG = \dfrac{TB}{AB} \] 
+\[RC = \dfrac{(H+BB)*TB}{AB+BB} \]
+\[OBP = \dfrac{H+BB+HBP}{AB+BB+HBP+SF} \]
+
+\end{document}
